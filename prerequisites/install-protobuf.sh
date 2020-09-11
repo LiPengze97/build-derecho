@@ -16,5 +16,5 @@ git submodule update --init --recursive
 ./autogen.sh
 ./configure --prefix=${INSTALL_PREFIX}
 make -j `lscpu | grep "^CPU(" | awk '{print $2}'`
-make install
-ldconfig
+sudo make install
+sudo ldconfig

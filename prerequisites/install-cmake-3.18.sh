@@ -12,6 +12,6 @@ WORKPATH=`mktemp -d`
 cd ${WORKPATH}
 wget https://cmake.org/files/v3.18/cmake-3.18.0-rc2-Linux-x86_64.tar.gz
 tar xzvf cmake-3.18.0-rc2-Linux-x86_64.tar.gz
-mv cmake-3.18.0-rc2-Linux-x86_64 /opt/cmake-3.18.0
-ln -sf /opt/cmake-3.18.0/bin/*  ${INSTALL_PREFIX}/bin
+sudo mv cmake-3.18.0-rc2-Linux-x86_64 /opt/cmake-3.18.0
+sudo ln -sf /opt/cmake-3.18.0/bin/*  ${INSTALL_PREFIX}/bin
 cmake --version

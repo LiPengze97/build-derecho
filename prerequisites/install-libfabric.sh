@@ -18,4 +18,4 @@ libtoolize
 ./autogen.sh
 ./configure --prefix=${INSTALL_PREFIX} --disable-mlx
 make -j `lscpu | grep "^CPU(" | awk '{print $2}'`
-make install
+sudo make install
