@@ -1,0 +1,1 @@
+echo export DERECHO_CONF_FILE=/users/weijia/build-derecho/derecho.cfg
