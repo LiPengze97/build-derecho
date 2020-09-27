@@ -22,7 +22,11 @@ make -j `lscpu | grep "^CPU(" | awk '{print $2}'`
 # ./test/unit/unittest.sh
 # will see "All unit tests passed"
 
-ldconfig -v -n ./build/lib
-LD_LIBRARY_PATH=./build/lib/
-LD_LIBRARY_PATH=./app/spdk_tgt/spdk_tgt
 make install
+cd dpdkbuild && make install && cd ..
+# though Makefile under dpdk/ seems empty, it indeed does things.
+cd dpdk && make install && cd ..
+
+scripts/setup.sh
+
+export LD_LIBRARY_PATH=/usr/local/lib
