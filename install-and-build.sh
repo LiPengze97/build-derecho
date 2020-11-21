@@ -26,3 +26,6 @@ bash prerequisites/install-openssl-1.1.1.sh
 
 bash build/build-derecho.sh
 bash build/build-cascade.sh
+
+export  LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+sysctl -w vm.overcommit_memory=1
