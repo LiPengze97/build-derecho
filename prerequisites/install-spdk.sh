@@ -22,7 +22,7 @@ make -j `lscpu | grep "^CPU(" | awk '{print $2}'`
 # ./test/unit/unittest.sh
 # will see "All unit tests passed"
 
-make install
+sudo make install
 cd dpdkbuild && make install && cd ..
 # though Makefile under dpdk/ seems empty, it indeed does things.
 cd dpdk && make install && cd ..

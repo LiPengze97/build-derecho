@@ -18,4 +18,4 @@ export http_proxy=10.0.0.252:12333
 export https_proxy=10.0.0.252:12333
 git submodule update --init --recursive
 make -j `lscpu | grep "^CPU(" | awk '{print $2}'`
-make install
+sudo make install

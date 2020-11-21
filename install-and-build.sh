@@ -22,6 +22,7 @@ bash prerequisites/install-mutils.sh
 bash prerequisites/install-mutils-containers.sh
 bash prerequisites/install-mutils-tasks.sh
 bash prerequisites/install-json.sh
+bash prerequisites/install-openssl-1.1.1.sh
 
 bash build/build-derecho.sh
 bash build/build-cascade.sh
