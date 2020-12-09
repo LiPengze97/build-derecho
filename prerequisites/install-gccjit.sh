@@ -7,7 +7,7 @@ if [[ $# -gt 0 ]]; then
 fi
 
 # install bison and other
-sudo apt-get autoremove bison
+sudo apt-get autoremove bison -y
 wget http://ftp.gnu.org/gnu/bison/bison-3.3.2.tar.gz
 tar -zxvf bison-3.3.2.tar.gz
 cd bison-3.3.2
