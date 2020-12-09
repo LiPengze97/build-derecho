@@ -14,7 +14,7 @@ if [ -d "derecho" ];then
   rm -rf derecho
 fi
 
-git clone --recursive https://github.com/Derecho-Project/derecho.git
+git clone -b register_more_rpc_functions --recursive https://github.com/Panlichen/derecho.git
 cd derecho
 
 mkdir build && cd build
