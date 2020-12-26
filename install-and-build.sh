@@ -24,6 +24,9 @@ bash prerequisites/install-mutils-tasks.sh
 bash prerequisites/install-json.sh
 bash prerequisites/install-openssl-1.1.1.sh
 bash prerequisites/install-gccjit.sh
+bash prerequisites/install-linq.sh
+bash prerequisites/install-fuse.sh
+bash prerequisites/install-mxnet.sh
 
 bash build/build-derecho.sh
 bash build/build-cascade.sh
