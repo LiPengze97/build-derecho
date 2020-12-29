@@ -8,7 +8,7 @@ fi
 
 echo "Using INSTALL_PREFIX=${INSTALL_PREFIX}"
 
-WORKPATH=`mktemp -d`
+WORKPATH=${HOME}
 cd ${WORKPATH}
 sudo apt-get update
 sudo apt-get install -y ninja-build ccache libopenblas-dev libopencv-dev libatlas-base-dev libatlas3-base

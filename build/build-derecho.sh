@@ -7,6 +7,8 @@ if [[ $# -gt 0 ]]; then
     INSTALL_PREFIX=$1
 fi
 
+LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+
 echo "Using INSTALL_PREFIX=${INSTALL_PREFIX}"
 cd ${WORKPATH}
 
