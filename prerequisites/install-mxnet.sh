@@ -21,8 +21,6 @@ make -j `lscpu | grep "^CPU(" | awk '{print $2}'`
 sudo install -d ${INSTALL_PREFIX}/include/mxnet-cpp
 sudo install cpp-package/include/mxnet-cpp/* ${INSTALL_PREFIX}/include/mxnet-cpp
 
-sudo install -d ${INSTALL_PREFIX}/include/mxnet
-sudo install include/mxnet/* ${INSTALL_PREFIX}/include/mxnet
 sudo install -d ${INSTALL_PREFIX}/include/mxnet/ir
 sudo install include/mxnet/ir/* ${INSTALL_PREFIX}/include/mxnet/ir
 sudo install -d ${INSTALL_PREFIX}/include/mxnet/node
@@ -39,8 +37,6 @@ sudo install include/dmlc/* ${INSTALL_PREFIX}/include/dmlc
 sudo install -d ${INSTALL_PREFIX}/include/mkldnn
 sudo install include/mkldnn/* ${INSTALL_PREFIX}/include/mkldnn
 
-sudo install -d ${INSTALL_PREFIX}/include/mshadow
-sudo install include/mshadow/* ${INSTALL_PREFIX}/include/mshadow
 sudo install -d ${INSTALL_PREFIX}/include/mshadow/cuda
 sudo install include/mshadow/cuda/* ${INSTALL_PREFIX}/include/mshadow/cuda
 sudo install -d ${INSTALL_PREFIX}/include/mshadow/extension
@@ -53,4 +49,9 @@ sudo install include/nnvm/* ${INSTALL_PREFIX}/include/nnvm
 
 sudo install -d ${INSTALL_PREFIX}/lib
 sudo install lib/* ${INSTALL_PREFIX}/lib
+
+sudo install -d ${INSTALL_PREFIX}/include/mxnet
+sudo install include/mxnet/* ${INSTALL_PREFIX}/include/mxnet
+sudo install -d ${INSTALL_PREFIX}/include/mshadow
+sudo install include/mshadow/* ${INSTALL_PREFIX}/include/mshadow
 # sudo make install

@@ -1,0 +1,1 @@
+cp -r /users/weijia/cascade/src/service/data_path_logic/cnn_classifier_cfg /users/weijia/cascade/build/src/service/data_path_logic/
