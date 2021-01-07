@@ -8,14 +8,14 @@ fi
 
 echo "Using INSTALL_PREFIX=${INSTALL_PREFIX}"
 
-WORKPATH=`mktemp -d`
+WORKPATH="/users/weijia/phxpaxos/third_party"
 cd ${WORKPATH}
 git clone https://github.com/grpc/grpc.git
 cd grpc
 git checkout 9dfbd34
 # use proxy to bypass GFW for git submodule install
-export http_proxy=10.0.0.252:12333
-export https_proxy=10.0.0.252:12333
+# export http_proxy=10.0.0.252:12333
+# export https_proxy=10.0.0.252:12333
 git submodule update --init --recursive
 make -j `lscpu | grep "^CPU(" | awk '{print $2}'`
 sudo make install

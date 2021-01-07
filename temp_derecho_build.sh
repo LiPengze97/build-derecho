@@ -1,3 +1,9 @@
+if [ -d "build" ]; then
+
+ rm -rf build
+
+fi
+
 INSTALL_PREFIX="/usr/local"
 
 mkdir build && cd build
