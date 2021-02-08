@@ -14,7 +14,7 @@ if [ -d "cascade" ];then
   rm -rf cascade
 fi
 
-git clone --recursive https://github.com/Derecho-Project/cascade.git
+git clone --recursive https://github.com/Derecho-Project/cascade.git -b evaluation
 cd cascade
 
 mkdir build && cd build
