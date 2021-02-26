@@ -12,7 +12,7 @@ WORKPATH=${HOME}
 cd ${WORKPATH}
 sudo apt-get update
 sudo apt-get install -y ninja-build ccache libopenblas-dev libopencv-dev libatlas-base-dev libatlas3-base
-sudo apt install gfortran
+sudo apt install -y gfortran
 
 git clone --recursive https://github.com/apache/incubator-mxnet.git mxnet -b v1.7.x && cd mxnet
 # 似乎不能再写回到原来文件，会变成空文件，写到一个新位置就好
