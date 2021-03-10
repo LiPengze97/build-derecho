@@ -1,7 +1,5 @@
 if [ -d "build" ]; then
-
- rm -rf build
-
+  rm -rf build
 fi
 
 INSTALL_PREFIX="/usr/local"
