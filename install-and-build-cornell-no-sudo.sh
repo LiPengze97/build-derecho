@@ -17,20 +17,20 @@ libtool m4 automake wget curl make unzip iputils-ping git --fix-missing
 
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
-prerequisites-cornell/install-cmake-3.18.sh
-prerequisites-cornell/install-spdlog.sh
-prerequisites-cornell/install-libfabric.sh
-prerequisites-cornell/install-mutils.sh
-prerequisites-cornell/install-mutils-containers.sh
-prerequisites-cornell/install-mutils-tasks.sh
-prerequisites-cornell/install-json.sh
-prerequisites-cornell/install-openssl-1.1.1.sh
-prerequisites-cornell/install-gccjit.sh
-prerequisites-cornell/install-linq.sh
-prerequisites-cornell/install-fuse.sh
-prerequisites-cornell/install-mxnet.sh
+prerequisites-cornell-no-sudo/install-cmake-3.18.sh
+prerequisites-cornell-no-sudo/install-spdlog.sh
+prerequisites-cornell-no-sudo/install-libfabric.sh
+prerequisites-cornell-no-sudo/install-mutils.sh
+prerequisites-cornell-no-sudo/install-mutils-containers.sh
+prerequisites-cornell-no-sudo/install-mutils-tasks.sh
+prerequisites-cornell-no-sudo/install-json.sh
+prerequisites-cornell-no-sudo/install-openssl-1.1.1.sh
+prerequisites-cornell-no-sudo/install-gccjit.sh
+prerequisites-cornell-no-sudo/install-linq.sh
+prerequisites-cornell-no-sudo/install-fuse.sh
+prerequisites-cornell-no-sudo/install-mxnet.sh
 
-build-cornell/build-derecho.sh
-build-cornell/build-cascade.sh
+build-cornell-no-sudo/build-derecho.sh
+build-cornell-no-sudo/build-cascade.sh
 
 sudo sysctl -w vm.overcommit_memory=1
