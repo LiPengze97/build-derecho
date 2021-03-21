@@ -28,7 +28,7 @@ prerequisites-cornell-no-sudo/install-openssl-1.1.1.sh
 prerequisites-cornell-no-sudo/install-gccjit.sh
 prerequisites-cornell-no-sudo/install-linq.sh
 prerequisites-cornell-no-sudo/install-fuse.sh
-prerequisites-cornell-no-sudo/install-mxnet.sh
+# prerequisites-cornell-no-sudo/install-mxnet.sh
 
 build-cornell-no-sudo/build-derecho.sh
 build-cornell-no-sudo/build-cascade.sh
