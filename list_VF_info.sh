@@ -12,3 +12,4 @@ do
 done
 column -t VF_info_temp.txt > VF_info.txt
 rm pci_ids.txt VF_info_temp.txt
+cat VF_info.txt
