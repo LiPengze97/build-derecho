@@ -16,7 +16,7 @@ sudo python3 get-pip.py
 sudo python3 -m pip install meson
 sudo python3 -m pip install ninja
 
-wget https://github.com/libfuse/libfuse/releases/download/fuse-3.10.0/fuse-3.10.0.tar.xz
+wget https://github.com/libfuse/libfuse/releases/download/fuse-3.10.0/fuse-3.10.0.tar.xz --no-check-certificate
 tar xJvf fuse-3.10.0.tar.xz
 cd fuse-3.10.0
 
