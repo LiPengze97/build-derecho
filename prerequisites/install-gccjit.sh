@@ -19,7 +19,7 @@ sudo apt-get install -y libgccjit-7-dev
 
 cd ${WORKPATH}
 # this is now a private one
-git clone -b final https://github.com/LiPengze97/predicate_flex
+git clone -b postfix https://github.com/LiPengze97/predicate_flex
 cd predicate_flex
 mkdir build
 cd build
